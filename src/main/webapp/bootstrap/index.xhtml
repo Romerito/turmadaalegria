@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:ui="http://java.sun.com/jsf/facelets"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:jsf="http://xmlns.jcp.org/jsf">
+
+		<head>
+			<!--- Basic Page Needs
+				================================================== -->
+
+			<meta charset="utf-8" />
+
+			<title>Turma da Alegria</title>
+
+			<meta name="description" content="" />
+
+			<meta name="author" content="" />
+			<!-- Mobile Specific Metas
+				================================================== -->
+
+			<meta name="viewport"
+				content="width=device-width, initial-scale=1, maximum-scale=1" />
+			<!-- CSS
+				================================================== -->
+			<STYLE type="text/css">
+				.alert-minimalist { background-color: rgb(241, 242,
+				240); border-color: rgba(149, 149, 149, 0.3);
+				border-radius: 3px; color: rgb(149, 149, 149); padding:
+				10px; } .alert-minimalist > [data-notify="icon"] {
+				height: 50px; margin-right: 12px; } .alert-minimalist >
+				[data-notify="title"] { color: rgb(51, 51, 51); display:
+				block; font-weight: bold; margin-bottom: 5px; }
+				.alert-minimalist > [data-notify="message"] { font-size:
+				80%; }
+			</STYLE>
+			<script type="text/javascript">
+				function confirmar(){
+
+				$.notify({ icon: 't.jpg', title: 'Turma da Alegria',
+				message: 'Mensagem enviada! Entraremos em contato e
+				obriagado pela preferência.' },{ type: 'minimalist',
+				delay: 5000, icon_type: 'image', template: '<div
+				data-notify="container" class="col-xs-11 col-sm-3 alert
+				alert-{0}" role="alert">' + '<img data-notify="icon"
+				class="img-circle pull-left"/>' + '<span
+				data-notify="title">{1}</span>' + '<span
+				data-notify="message">{2}</span>' + '</div>' }); }
+			</script>
+			<link rel="stylesheet" href="css/base.css" />
+			<link rel="stylesheet" href="css/main.css" />
+			<link rel="stylesheet" href="css/media-queries.css" />
+
+			<!-- Script
+				=================================================== -->
+
+
+
+			<script src="js/modernizr.js"></script>
+
+
+			<!-- Favicons
+				=================================================== -->
+			<link rel="shortcut icon" href="t.jpg" />
+
+		</head>
+		<body class="homepage">
+
+			<div id="preloader">
+
+				<div id="status">
+					<img src="images/loader.gif" height="60" width="60"
+						alt="" />
+
+					<div class="loader">Loading...</div>
+				</div>
+			</div>
+
+			<!-- Header
+				=================================================== -->
+			<header id="main-header">
+
+				<div class="row header-inner">
+
+					<div class="logo">
+						<a class="smoothscroll" href="#hero">
+							Turma da Alegria
+						</a>
+					</div>
+					<nav id="nav-wrap">
+						<a class="mobile-btn" href="#nav-wrap"
+							title="Show navigation">
+							<span class="menu-text">Show Menu</span>
+							<span class="menu-icon" />
+						</a>
+						<a class="mobile-btn" href="#"
+							title="Hide navigation">
+							<span class="menu-text">Hide Menu</span>
+							<span class="menu-icon" />
+						</a>
+
+						<ul id="nav" class="nav">
+
+							<li class="current">
+								<a class="smoothscroll" href="#hero" />
+							</li>
+
+							<li>
+								<a class="smoothscroll"
+									href="#portfolio">
+									Galeria
+								</a>
+							</li>
+
+							<li>
+								<a class="smoothscroll"
+									href="#services">
+									Serviços
+								</a>
+							</li>
+
+							<li>
+								<a class="smoothscroll" href="#about">
+									Sobre nós
+								</a>
+							</li>
+							<!--   <li><a class="smoothscroll" href="#journal">Blog.</a></li>-->
+
+							<li>
+								<a class="smoothscroll"
+									href="#contact">
+									Contato
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- /nav-wrap -->
+				</div>
+				<!-- /header-inner -->
+			</header>
+			<!-- Hero
+				=================================================== -->
+			<section id="hero">
+
+
+				<div class="row pg-content">
+
+					<div class="twelve columns flex-container">
+
+						<div id="hero-slider" class="flexslider">
+
+							<ul class="slides">
+								<!-- Slide -->
+
+								<li>
+
+									<div class="flex-caption">
+
+										<h1>Sua festa será incrível</h1>
+
+										<p>
+											<a
+												class="button stroke smoothscroll" href="#portfolio">
+												Nossos Trabalhos
+											</a>
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- .flexslider -->
+					</div>
+					<!-- .flex-container -->
+				</div>
+				<!-- .hero-content -->
+			</section>
+			<!-- #hero -->
+			<!-- Portfolio
+				================================================== -->
+			<section id="portfolio">
+
+				<div class="row section-head">
+
+					<div class="twelve columns">
+
+						<h1>
+							Modelo de Trabalho
+							<span>.</span>
+						</h1>
+
+						<hr />
+
+						<p />
+					</div>
+				</div>
+
+				<div class="row items">
+
+					<div class="twelve columns">
+
+						<div id="portfolio-wrapper"
+							class="bgrid-fourth s-bgrid-third mob-bgrid-half group">
+
+							<div class="bgrid item">
+
+								<div class="item-wrap">
+									<img
+										src="images/portfolio/festac.jpg" alt="Festa" />
+									<div class="overlay" />
+
+									<div class="portfolio-item-meta">
+
+										<h5>Festa</h5>
+
+										<p>Show</p>
+									</div>
+								</div>
+							</div>
+							<!-- /item -->
+
+							<div class="bgrid item">
+
+								<div class="item-wrap">
+									<img
+										src="images/portfolio/kindergarten.png" alt="Entretenimento" />
+
+									<div class="overlay">
+
+										<div
+											class="portfolio-item-meta">
+
+											<h5>Brincadeiras</h5>
+
+											<p>Show</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /item -->
+
+							<div class="bgrid stack item">
+
+								<div class="item-wrap">
+									<img
+										src="images/portfolio/magico.png" alt="Mágica" />
+
+									<div class="overlay">
+
+										<div
+											class="portfolio-item-meta">
+
+											<h5>Mágicas</h5>
+
+											<p>Show Infantil</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /item -->
+
+							<div class="bgrid item">
+
+								<div class="item-wrap">
+									<img
+										src="images/portfolio/pcrisos.png" alt="Palhaços" />
+
+									<div class="overlay">
+
+										<div
+											class="portfolio-item-meta">
+
+											<h5>Atração de Humor</h5>
+
+											<p>Show</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /item -->
+
+							<div class="bgrid item">
+
+								<div class="item-wrap">
+									<img
+										src="images/portfolio/psinabolinhas.png"
+										alt="Piscina de Bolinhas" />
+									<div class="overlay">
+										<div
+											class="portfolio-item-meta">
+											<h5>Brincadeiras</h5>
+											<p>
+												Equipamentos para Festa
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /item -->
+
+							<div class="bgrid item">
+
+								<div class="item-wrap">
+									<img
+										src="images/portfolio/charlie.png" alt="Teatro" />
+
+									<div class="overlay">
+
+										<div
+											class="portfolio-item-meta">
+
+											<h5>Teatro</h5>
+
+											<p>Show</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /item -->
+
+							<div class="bgrid item">
+
+								<div class="item-wrap">
+									<img src="images/portfolio/bboy.png"
+										alt="B.boy" />
+
+									<div class="overlay">
+										<div
+											class="portfolio-item-meta">
+											<h5>Breaking Hip Hop</h5>
+											<p>Show Dança</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /item -->
+
+							<div class="bgrid item">
+
+								<div class="item-wrap">
+									<img
+										src="images/portfolio/girlpaint.png" alt="Pintura de Rosto" />
+									<div class="overlay">
+										<div
+											class="portfolio-item-meta">
+											<h5>Pintura</h5>
+											<p>Rosto Infantil</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- item end -->
+						</div>
+						<!-- /portfolio-wrapper -->
+					</div>
+					<!-- /twelve -->
+				</div>
+				<!-- /row -->
+			</section>
+			<!-- /Portfolio -->
+			<!-- Services Section
+				================================================== -->
+			<section id="services">
+
+				<div class="row section-head">
+
+					<div class="twelve columns">
+
+						<h1>
+							Serviço
+							<span>.</span>
+						</h1>
+						<hr />
+						<p>
+							Trabalhamos com apresentações de dança,
+							shows, espetáculos e coreografias. Contamos
+							com profissionais qualificados, responsáveis
+							e dedicados dessa forma oferecemos um
+							trabalho de qualidade aos nossos clientes.
+							Em nossas apresentações levamos ao público a
+							beleza e a emoção da arte e dançar, fazendo
+						</p>
+						<h2>
+							<span>
+								o momento alegre, agradável e
+								emocionante a uma bela recordação.
+							</span>
+						</h2>
+					</div>
+				</div>
+
+				<div class="row">
+
+					<div class="twelve columns">
+
+
+						<!-- /service-list -->
+					</div>
+					<!-- /twelve -->
+				</div>
+				<!-- /row -->
+			</section>
+			<!-- /services -->
+			<!-- About Section
+				================================================== -->
+			<section id="about">
+
+				<div class="row section-head">
+
+					<div class="twelve columns">
+
+						<h1>
+							Sobre Nós
+							<span>.</span>
+						</h1>
+
+						<hr />
+
+						<p>
+					
+						<h2>
+							Turma da alegria foi fundada em Brasília, e
+							sua principal missão é promover serviço
+							Artístico-cultural.
+</h2>
+						<br />
+						</p>
+					</div>
+				</div>
+				<div id="team">
+					<div class="row team section-head">
+
+						<div class="twelve columns">
+							<h1>
+								NOSSO TIME
+								<span>.</span>
+							</h1>
+							<hr />
+							<p></p>
+						</div>
+					</div>
+					<div class="row about-content">
+						<div class="twelve columns">
+							<div id="team-wrapper"
+								class="bgrid-half mob-bgrid-whole group">
+								<div class="bgrid member">
+									<div class="member-header">
+										<div class="member-pic">
+											<img
+												src="images/team/perfil.jpg" alt="" />
+										</div>
+										<div class="member-name">
+											<h3>Romerito Alencar</h3>
+											<span>Promotor</span>
+										</div>
+									</div>
+									<p>
+										Romerito Alencar da Silva
+										<br />
+										Promotor artística-cultural.
+									</p>
+									<ul class="member-social">
+										<li>
+											<a
+												href="https://www.facebook.com/Romerito.Alencar">
+												<i
+													class="fa fa-facebook" />
+											</a>
+										</li>
+										<li>
+											<a
+												href="https://twitter.com/AlencarRomerito">
+												<i
+													class="fa fa-twitter" />
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- /member -->
+
+								<div class="bgrid member">
+
+									<div class="member-header">
+										<div class="member-pic">
+											<img
+												src="images/team/diones.jpg" alt="" />
+										</div>
+										<div class="member-name">
+											<h3>Diones Liliane</h3>
+											<span>Promotor</span>
+										</div>
+									</div>
+									<p>
+										Diones Gomes da Silva
+										<br />
+										Promotor artísta-cultural.
+									</p>
+									<ul class="member-social">
+										<li>
+											<a
+												href="https://www.facebook.com/diones.gomesdasilva.9">
+												<i
+													class="fa fa-facebook" />
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- /member -->
+							</div>
+							<!-- /twelve -->
+						</div>
+						<!-- /team-wrapper -->
+					</div>
+					<!-- /row -->
+				</div>
+				<!-- /team -->
+			</section>
+			<!-- /about -->
+			<!-- journal
+				=================================================== -->
+			<section id="journal"></section>
+			<!-- /blog -->
+
+			<!-- Contact Section
+				================================================== -->
+			<section id="contact">
+
+				<div class="row section-head">
+
+					<div class="twelve columns">
+
+						<h1>
+							Contato
+							<span>.</span>
+						</h1>
+
+						<hr />
+						<p>
+							Deixe sua mensagem conosco, entraremos em
+							contato com você.
+						</p>
+					</div>
+				</div>
+				<div class="row form-section">
+					<div id="contact-form" class="twelve columns">
+						<h:form id="form" prependId="false"
+							onsubmit="confirmar();">
+							<h1>
+								<h:messages style="color:blue" />
+							</h1>
+							<fieldset>
+								<div class="row">
+									<div
+										class="six columns mob-whole">
+										<b>E-Mail:</b>
+										<input type="email"
+											jsf:id="email" name="email" value="#{mailBean.eMail}"
+											required="required">
+
+										<f:passThroughAttribute
+											name="type" value="email" />
+										<f:passThroughAttribute
+											name="placeholder" value="Entre com seu email" />
+										</input>
+									</div>
+								</div>
+								<div class="row">
+									<div
+										class="six columns mob-whole">
+										<b>Assunto:</b>
+										<input type="*" jsf:id="assunto"
+											name="assunto" value="#{mailBean.topic}"
+											required="required">
+
+										<f:passThroughAttribute
+											name="type" value="assunto" />
+										<f:passThroughAttribute
+											name="placeholder" value="Entre com o assunto" />
+										</input>
+									</div>
+								</div>
+								<div class="row">
+									<div class="twelve columns">
+										<b>Mensagem:</b>
+										<textarea type="*"
+											jsf:id="mensagem" name="mensagem"
+											value="#{mailBean.textMessage}" required="required"
+											maxlength="250">
+											<f:passThroughAttribute
+											name="type" value="mensagem"
+											/> <f:passThroughAttribute
+											name="placeholder"
+											value="Entre com a mensagem"
+											/>
+										</textarea>
+									</div>
+								</div>
+								<div>
+									<h:commandButton
+										value="Enviar Mensagem" id="enviarMenssagem"
+										actionListener="#{mailBean.enviarMensagem}" />
+								</div>
+
+							</fieldset>
+						</h:form>
+						<!-- message box -->
+						<div id="message-warning">
+
+							<div class="alert-box error hideit">
+								<p>Erro! Vou contata o ADM site.</p>
+								<i class="fa fa-times close"></i>
+							</div>
+							<!-- /error -->
+						</div>
+						<div id="message-success">
+							<div class="alert-box success hideit">
+								<p>Mensagem enviada</p>
+								<i class="fa fa-times close"></i>
+							</div>
+						</div>
+					</div>
+					<!-- /contact-form -->
+
+				</div>
+				<!-- /form-section -->
+
+
+			</section>
+			<!-- /contact-->
+			<!-- Footer
+				================================================== -->
+			<footer>
+
+				<div class="row">
+					<div class="six columns tab-whole footer-about">
+						<h1>
+							<font color="white">Turma da Alegria</font>
+						</h1>
+					</div>
+					<!-- /footer-about -->
+					<div class="six columns tab-whole right-cols">
+						<div class="row">
+							<div class="columns">
+								<h1 class="address">
+									<font color="white">Contato</font>
+								</h1>
+								<p>
+									Brasília-DF
+									<br />
+									<br />
+								</p>
+								<ul>
+									<li>(61) 3054-6909</li>
+									<li>
+										<a
+											href="mailto:romerito.alencar@gmail.com">
+											romerito.alencar@gmail.com
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- /columns -->
+
+							<div class="columns last">
+
+								<h1 class="contact">
+									<font color="white">Siga nós</font>
+								</h1>
+
+								<ul>
+									<li>
+										<a
+											href="https://www.facebook.com/Turma-da-Alegria-1717830998274642/"
+											target="_blank">
+											Facebook
+										</a>
+									</li>
+								</ul>
+
+							</div>
+							<!-- /columns -->
+						</div>
+						<!-- /Row(nested) -->
+					</div>
+					<div id="go-top">
+						<a class="smoothscroll" title="Back to Top"
+							href="#hero">
+							<span>Top</span>
+							<i class="fa fa-long-arrow-up" />
+						</a>
+					</div>
+				</div>
+				<!-- /row -->
+			</footer>
+			<!-- /footer -->
+			<!-- Footer
+				================================================== -->
+			<footer>
+
+				<div class="row">
+
+					<div class="six columns tab-whole footer-about">
+
+
+						<h3>Sobre JAMES SOFTWARE</h3>
+
+
+						<p>
+							O que fazemos?
+							<br />
+							Nós projetamos sistemas de identidade,
+							plataformas digitais e marcas que envolvem o
+							consumidor de hoje.
+						</p>
+
+						<p>
+							O principal objetivo da JAMES SOFTWARE é
+							proporcionar sucesso aos clientes e
+							colaboradores, mediante uma visão inovadora,
+							verdadeira e possível.
+						</p>
+					</div>
+					<!-- /footer-about -->
+					<div class="six columns tab-whole right-cols">
+						<div class="row">
+							<div class="columns">
+								<h3 class="address">Contato</h3>
+								<p>
+									Brasília-DF
+									<br />
+									<br />
+								</p>
+								<ul>
+									<li>
+										<a href="#">(61) 3054-6909</a>
+									</li>
+									<li>
+										<a
+											href="mailto:romerito.alencar@gmail.com">
+											romerito.alencar@gmail.com
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- /columns -->
+
+							<div class="columns last">
+
+								<h3 class="contact">Siga nos</h3>
+
+								<ul>
+									<li>
+										<a
+											href="https://www.facebook.com/Romerito.Alencar">
+											Facebook
+										</a>
+									</li>
+								</ul>
+
+							</div>
+							<!-- /columns -->
+						</div>
+						<!-- /Row(nested) -->
+					</div>
+
+					© 2018 Turma da Alegria . Todos os direito
+					reservados |
+					<h1>
+						<span>
+							James Software ®
+							<a href="http://www.jamessoftware.com.br/" />
+						</span>
+					</h1>
+
+					<div id="go-top">
+						<a class="smoothscroll" title="Back to Top"
+							href="#hero">
+							<span>Top</span>
+							<i class="fa fa-long-arrow-up" />
+						</a>
+					</div>
+				</div>
+				<!-- /row -->
+			</footer>
+			<!-- /footer -->
+			<!-- Java Script
+				================================================== -->
+
+			<script
+				src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+			</script>
+
+			<script type="text/javascript"
+				src="js/jquery-migrate-1.2.1.min.js">
+			</script>
+
+			<script src="js/jquery.flexslider.js"></script>
+
+			<script src="js/jquery.fittext.js"></script>
+
+			<script src="js/backstretch.js"></script>
+
+			<script src="js/waypoints.js"></script>
+
+			<script src="js/main.js"></script>
+
+			<script src="js/jquery-3.2.0.min.js"></script>
+
+			<script src="js/validator.js"></script>
+
+			<script src="js/bootstrap-notify.min.js"></script>
+
+		</body>
+	</html>

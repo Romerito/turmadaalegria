@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+          <!-- CONNECTION OF DATA SOURCE -->     
+		<property name="connection.datasource">java:/turmadaalegriadb</property>
+		<!-- REQUIRED FOR THE CONNECTION FILTER --> 
+		<property name="current_session_context_class">thread</property>
+          <!-- TABLE STRUCTURE BASED ON PERSISTENCE -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+          <!-- ENTITIES -->      
+        <mapping class = "mail.Mail" />
+	</session-factory>
+</hibernate-configuration>
